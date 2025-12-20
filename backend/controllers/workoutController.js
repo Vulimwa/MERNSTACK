@@ -25,7 +25,7 @@ const oneWorkout = async (req, res) => {
       return res.status(400).json({ message: "Invalid workout ID" });
     }
 
-    const singleWorkout = await Workout.findById(id);
+    const singleWorkout = await Workout.findOne({_id:id});
 
     if (!singleWorkout) {
       return res.status(404).json({ message: "Workout not found" });
