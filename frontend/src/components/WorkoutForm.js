@@ -27,7 +27,7 @@ const WorkoutForm = () => {
       setTitle("");
       setLoad("");
       setReps("");
-      setError("null");
+      setError(null);
       console.log("New Workout Added");
     }
   };
